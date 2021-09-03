@@ -1,0 +1,7 @@
+[user]
+	name = SoraSpades
+	email = davidandrino2002@gmail.com
+[core]
+	editor = vim
+[alias]
+	l = log --oneline
