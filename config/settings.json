@@ -1,0 +1,170 @@
+{
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "workbench.colorTheme": "Night Owl (No Italics)",
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.runInTerminal": true,
+    "editor.fontFamily": "'Consolas ligaturized v2', 'Consolas', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              //following will be in italic (=FlottFlott)
+              "comment",
+              "entity.name.type.class", //class names
+              "keyword.control",
+              "keyword.other",
+              //"keyword", //import, export, return…
+              //"constant", //String, Number, Boolean…, this, super
+              "storage.modifier", //static keyword
+              "storage.type.class.js", //class keyword
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            },
+          },
+          {
+            "scope" : [
+            ],
+            "settings" : {
+              "fontStyle": "bold"
+            }
+          }
+        ]
+      },
+      "editor.minimap.enabled": true,
+      "search.useGlobalIgnoreFiles": true,
+      "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.vscode": true
+    },
+    "editor.fontSize": 20,
+      "window.titleBarStyle": "custom",
+      "code-runner.saveAllFilesBeforeRun": true,
+      "window.menuBarVisibility": "classic",
+      "editor.fontWeight": 500,
+      "explorer.confirmDelete": false,
+      "code-runner.ignoreSelection": true,
+      "git.autofetch": true,
+      "editor.suggestSelection": "first",
+      "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+      "code-runner.clearPreviousOutput": true,
+      "vim.cursorStylePerMode.insert": "line",
+      "vim.cursorStylePerMode.normal": "block",
+      "vim.cursorStylePerMode.replace": "underline",
+      "vim.useCtrlKeys": false,
+      "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["J", "K"],
+        "after": ["<Esc>"]
+      },
+    ],
+  "workbench.startupEditor": "none",
+"editor.detectIndentation": false,
+"vim.commandLineModeKeyBindings": [
+
+
+],
+"npm-intellisense.importES6": false,
+"npm-intellisense.packageSubfoldersIntellisense": true,
+"npm-intellisense.scanDevDependencies": true,
+"workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+},
+"workbench.iconTheme": "vs-nomo-dark",
+"material-icon-theme.folders.color": "#90a4ae",
+"material-icon-theme.folders.theme": "specific",
+"explorer.confirmDragAndDrop": false,
+"omnisharp.path": "latest",
+"editor.codeLens": true,
+"git.enableSmartCommit": true,
+"editor.cursorBlinking": "solid",
+"terminal.integrated.fontFamily": "Cascadia Code PL",
+"window.zoomLevel": 1,
+"editor.fontLigatures": "true",
+"javascript.updateImportsOnFileMove.enabled": "always",
+"terminal.integrated.profiles.windows": {
+    "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+        "path": [
+            "${env:windir}\\Sysnative\\cmd.exe",
+            "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+        "source": "Git Bash"
+    },
+    "PowerShell NoLogo": {
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": [
+            "-NoLogo"
+        ]
+    }
+},
+"terminal.integrated.defaultProfile.windows": "PowerShell NoLogo",
+"workspaceExplorer.workspaceStorageDirectory": "E:\\Documents\\Programacion",
+"workspaceSidebar.folder": "E:\\Documents\\Programacion",
+"powershell.integratedConsole.showOnStartup": false
+}
